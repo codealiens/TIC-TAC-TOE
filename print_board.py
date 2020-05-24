@@ -1,8 +1,8 @@
 def print_board(board):
 	board_size = len(board)
-	for count in range(board_size):
+	for row in range(board_size):
 		print('+---' * board_size + '+')
-		for count2 in range(board_size):
-			print('| ' + board[count][count2] + ' ', end='')
+		for col in range(board_size):
+			print('| ' + board[row][col] + ' ', end='')
 		print('|')
 	print('+---' * board_size + '+')
